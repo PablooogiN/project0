@@ -1,0 +1,68 @@
+$color: blue;
+
+%emphasize-this{
+    font-weight: bold;
+    color: $color;
+    font-weight: to-upper-case($string: name);
+}
+
+body{
+
+    h1, h3{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    p{
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.intextnav{
+    color: red;
+}
+
+#price{
+    font-size: 26px;
+    @extend %emphasize-this;
+}
+
+.title-price{
+    @extend %emphasize-this;
+}
+
+#price::before{
+    content: "$";
+}
+
+.row .span4 {
+    text-align: center;
+}
+
+.mainimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    //this is a mobile device
+    h1 {
+      color: $color;
+    }
+  }
+
+@media screen and (min-width: 800px) {
+    h1 {
+        color: red;
+    }
+  }
+
+.table {
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+}

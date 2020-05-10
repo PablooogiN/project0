@@ -1,0 +1,58 @@
+#price, .title-price {
+  font-weight: bold;
+  color: blue;
+  font-weight: NAME;
+}
+
+body h1, body h3 {
+  text-align: center;
+  padding: 2rem;
+}
+
+body p {
+  text-align: center;
+  padding: 10px;
+}
+
+.intextnav {
+  color: red;
+}
+
+#price {
+  font-size: 26px;
+}
+
+#price::before {
+  content: "$";
+}
+
+.row .span4 {
+  text-align: center;
+}
+
+.mainimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    color: blue;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    color: red;
+  }
+}
+
+.table {
+  border-radius: 5px;
+  width: 50%;
+  margin: 0px auto;
+  float: none;
+}
+/*# sourceMappingURL=style.css.map */
